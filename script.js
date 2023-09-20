@@ -16,11 +16,11 @@ function sacarId (color, ruta_imagen) {
 
     fondo.style.setProperty('--color-fondo', color)
 
-    size.forEach(Element => { // Esto es como hover de CSS pero en Javascript
+    size.forEach(Element => { // Bucle que recorre el padre e imprime los id de los hijos
         let id = Element.id;
-        //console.log(id) // Recorre el div e imprime sus id
+        //console.log(id) --> esto imprime los id
         
-        document.getElementById(id).onmouseenter = function(){
+        document.getElementById(id).onmouseenter = function(){  // Esto es como hover de CSS pero en Javascript
             document.getElementById(id).style.backgroundColor = color
         }
 
